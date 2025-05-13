@@ -1,0 +1,13 @@
+[project]
+name = "anime-downloader"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "asyncio>=3.4.3",
+    "django>=5.2.1",
+    "pydantic>=2.11.4",
+    "pyppeteer>=2.0.0",
+    "requests>=2.32.3",
+]
