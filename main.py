@@ -31,7 +31,7 @@ async def find_buttons_and_download(page: Page, download_page: Page, anime_name:
     episodes_amount = len(buttons)
     print(f"Found {episodes_amount} episodes.")
 
-    for index, button in enumerate(buttons[-1:]):
+    for index, button in enumerate(buttons):
         await button.click()
         time.sleep(1)
 
