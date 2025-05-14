@@ -100,7 +100,7 @@ async def main():
     anime_name = search_result.records[selected_index].title_eng
 
     await page.goto(
-        f"https://www.animeunity.so/anime/{search_result.records[0].id}-{search_result.records[0].slug}",
+        f"https://www.animeunity.so/anime/{search_result.records[selected_index].id}-{search_result.records[selected_index].slug}",
         {"waitUntil": "networkidle0"},
     )
 
